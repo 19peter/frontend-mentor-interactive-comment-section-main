@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(223, 19%, 93%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(223, 19%, 93%);
+}
+
+.post {
+    width: 100vmin;
+    height: 25vmin;
+    margin: 3vmin 0;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.score-section {
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(223, 19%, 93%);
+    border-radius: 10px;
+}
+
+.score-btn {
+    border: none;
+    margin: 2vmin 0;
+    background-color: hsl(223, 19%, 93%);
+    cursor: pointer;
+}
+
+.score {
+    margin: 0 auto;
+    color: hsl(212, 24%, 26%);
+}
+
+.content-section {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 3vmin 0 0 0;
+}
+
+.user-img {
+    width: 4vmin;
+    height: 4vmin;
+    margin: auto 2vmin auto 2vmin;
+}
+
+.name {
+    margin: 1vmin 1vmin 1vmin 2vmin;
+    font-size: 0.9rem;
+    color: hsl(212, 24%, 26%);
+    font-weight: 600;
+}
+
+.identifier {
+    margin-top: 1vmin;
+    font-size: 0.8rem;
+    width: 5vmin;
+    height: 3vmin;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.date {
+    margin: 1vmin 1vmin 1vmin 2vmin;
+    font-size: 0.9rem;
+    color: hsl(239, 57%, 85%);
+}
+
+.reply-box {
+    position: relative;
+    left: 18%;
+}
+
+.reply-box-icon {
+    margin: 1vmin 0 0 0;
+}
+
+.reply-box-btn {
+    border: none;
+    color: hsl(238, 40%, 52%);
+    background-color: white;
+    font-weight: 600;
+    margin: 0 2vmin;
+    cursor: pointer;
+    position: relative;
+    bottom: 0.2vmin;
+}
+
+.content {
+    width: 90%;
+    height: 80%;
+    margin: 2vmin;
+    line-height: 1.25;
+    font-size: 1rem;
+    color: hsl(211, 10%, 45%);
+}
+
+.reply-box-main {
+    width: 100vmin;
+    height: 25vmin;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.reply-box-main-hidden {
+    display: none;
+}
+
+.reply-box-main img {
+    width: 6vmin;
+    height: 6vmin;
+    margin: auto;
+}
+
+.reply-box-main button {
+    margin: auto;
+}
+
+.textarea {
+    width: 60%;
+    height: 60%;
+    margin: auto auto auto 1vmin;
+    border: solid 1px hsl(239, 57%, 85%);
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+.replying {
+    width: 15%;
+    height: 30%;
+    background-color: hsl(238, 40%, 52%);
+    border: none;
+    border-radius: 15px;
+    margin: 4vmin auto;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.reply-thread-body {
+    width: 85vmin;
+    height: fit-content;
+    border-left: 2px solid hsl(239, 57%, 85%);
+    margin-bottom: 3vmin;
+}
+
+.reply-container {
+    width: 75vmin;
+    height: 25vmin;
+    margin: 3vmin 0 3vmin 17vmin;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.delete, .edit {
+    margin: 0 1.5vmin;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.delete {
+    color: hsl(358, 79%, 66%);
+}
+
+.edit {
+    color: hsl(238, 40%, 52%);
+}
+
+.alert {
+    width: 55vmin;
+    height: 35vmin;
+    background-color: white;
+    position: absolute;
+    bottom: 50%;
+    left: 38%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.alert-body {
+    background-color: white;
+    margin: 5vmin 4vmin;
+    
+}
+
+.alert-body h6 {
+    margin: 2vmin 0;
+    font-size: 1.5rem;
+    color: hsl(212, 24%, 26%);
+    font-weight: 700;
+}
+
+.alert-body p {
+    color: hsl(240, 5%, 73%);
+}
+
+.alert-body button {
+    margin: 3vmin 2vmin;
+    width: 40%;
+    height: 8vmin;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.no-btn {
+    background-color: hsl(211, 10%, 45%);
+}
+
+.yes-btn {
+    background-color: hsl(358, 79%, 66%);
+}
+
+.textarea-edit {
+    width: 80%;
+    height: 40%;
+    margin: auto auto auto 1vmin;
+    border: solid 1px hsl(239, 57%, 85%);
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+.update-btn {
+    width: 10vmin;
+    height: 4vmin;
+    background-color: hsl(238, 40%, 52%);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 83%;
+    cursor: pointer;
+}
